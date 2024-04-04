@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.w50{
+    width: 50%;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*
+    banner
+*/
+
+section.topo{
+    background-image: linear-gradient(114deg, #250eBa, #00f9f7);
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.flex-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-mobile i{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-mobile i:hover{
+   opacity: 0.8;
+}
+
+.menu-mobile i:active{
+    opacity: 1;
+ }
+
+.menu-mobile ul{
+    display: none;
+    list-style-type: none;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    position: absolute;
+}
+
+.menu-mobile li{
+    padding: 8px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid #00f9f7;
+}
+
+.menu-mobile li:hover{
+    transition: 0.5s;
+    background-color: #00f9f7;
+}
+
+.menu-mobile li a{
+    display: block;
+    text-decoration: none;
+    color: #202020;
+}
+
+.menu-desktop li {
+    display: inline-block;
+    margin: 0 15px;
+   
+}
+
+.menu-desktop a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.menu-desktop a:hover{
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.time-descricao{
+    color: white;
+    margin-top: 70px;
+}
+
+.time-descricao h2{   
+    font-size: 45px;
+}
+
+.time-descricao p {
+    line-height: 1.5;
+    max-width: 350px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.time-descricao a{
+    text-decoration: none;
+    color: #1b49a5;
+    background-color: #ffca00;
+    box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
+    padding: 15px;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.time-descricao a:hover{
+    transition: 0.25s;
+    color: #2861d3;
+    background-color: #fff700;
+}
+
+.time-img img{
+    max-width: 100%;
+}
+
+.circle{
+    position: absolute;
+    margin-top: -30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+}
+
+.circle i {
+    position: relative;
+    top: 5px;
+    font-size: 30px;
+    color: #1c4aa6;
+}
+
+.slider-container{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.slider-container img{    
+    max-width: 100%;
+    margin: 20px 40px;
+}
+
+section.diferenciais{
+    padding: 30px 0;
+}
+
+section.diferenciais h2{
+    color: #202020;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.box-single-diferenciais {
+    margin: 50px;
+    text-align: center;
+}
+
+section.sobre-time {
+    padding: 40px 0;
+    background-color: #f4f9fd;
+}
+section.sobre-time .center .flex-time .w50 img{
+    width: 100%;
+}
+
+.time-descricao2{
+    margin-top: 70px;
+}
+
+.time-descricao2 h2{   
+    font-size: 45px;
+}
+
+.time-descricao2 p {
+    line-height: 1.5;
+    max-width: 350px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+section.depoimentos{
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* 
+        banner
+    */    
+    .menu-mobile{
+        display: block;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    .w50{width: 100%;}
+    .flex-time{display: inline-block;}
+
+    /*
+        descricao
+    */
+
+    .time-img{
+        text-align: center;
+    }
+
+    .time-descricao2{
+        margin-top: 70px;
+        text-align: center;
+    }
+    
+    .time-descricao2 h2{   
+        font-size: 45px;
+    }
+    
+    .time-descricao2 p {
+        line-height: 1.5;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    section.sobre-time .center .flex-time .w50 img{
+        
+        width: 60%;
+    }
+    
+}
